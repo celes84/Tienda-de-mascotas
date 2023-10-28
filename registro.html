@@ -1,0 +1,241 @@
+!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="tienda de accesorios, accesorios para mascotas"
+    />
+    <meta
+      name="description"
+      content="Descubre una amplia selección de accesorios para tu mascota, en nuestra tienda en línea."
+    />
+    <meta
+      name="author"
+      content="Maria Celeste Quiroga H, Maria Celeste Verduz, Facundo Di Pompo, Marta Vargas, Remigio Guerrero"
+    />
+
+    <title>Casa Campo</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="/css/contacto.css" />
+    <!-- link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Seccion navbar -->
+    <nav
+      class="navbar navbar-light navbar-expand-lg fixed-top"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../img/logo.jpeg"
+            alt="Soy un logo"
+            height="120"
+            class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../Paginas/index.html"
+                >Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Paginas/alimentos.html">Alimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Paginas/acerca-de-nosotros.html"
+                >Acerca de nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..">Carrito</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mi cuenta
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../Paginas/login.html"
+                    >Iniciar sesión</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Paginas/registro.html"
+                    >Registrarse</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+       <!-- Seccion principal -->
+       <main class="principal">
+        <div class="container1 mt-5">
+          <div class="container-main-registro borde-imgen-logo row p-3">
+            <div class="container-principal-registro col-lg-6 col-md-12 m-3">
+              <main>
+                <!-- FORMULARIO -->
+                <form action="#" class="formulario" id="formulario">
+                    <!-- GRUPO DE USUARIO -->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <label class="formulario__label">Nombre de usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="nombre_apellido">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                    </div>
+            
+                    
+                    <!-- GRUPO DE NOMBRE-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label class="formulario__label">Nombre y Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="nombre  apellido">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                    </div>
+            
+            
+                    <!-- GRUPO DE CONTRASEÑA 1-->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+                    </div>
+            
+            
+                    <!-- GRUPO DE CONTRASEÑA 2-->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label class="formulario__label">Repetir la contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña no coincide</p>
+                    </div>
+            
+            
+                    <!-- GRUPO DE EMAIL -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label class="formulario__label">Correo Electonico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+                    </div>
+            
+            
+                    <!-- GRUPO DE TELÉFONO -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="0123456789">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El número debe tener 10 digitos</p>
+                    </div>
+            
+            
+                    <!-- GRUPO TERMINOS Y CONDICIONES -->
+                    <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            <b class="formulario__span">Acepto los terminos y condiciones</b>
+                        </label>
+                    </div>
+                    
+                    <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+                    </div>
+            
+            
+                    <!-- GRUPO ENVIAR -->
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+                        <input class="formulario__btn" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </main>
+    <!-- Seccion footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="logo">
+          <img src="../img/logo.jpeg" style="max-width: 20%" alt="Soy el Logo" />
+          <p>CASA CAMPO</p>
+        </div>
+        <div class="social">
+          <h5>Buscanos en Nuestras Redes Sociales</h5>
+          <p>
+            <img
+              src="../img/facebook.jpg"
+              style="max-width: 3%"
+              alt="Logo facebook"
+              /> <a href="https://m.facebook.com/groups/863675708693839/?paipv=0&eav=AfY00-9UhOoAMMV57eZOBmC4HNAlGcYw3Nl7Tj2DDkxXhXKyOoERrkYLqFoAfSnWyPw">@casa campo</a>
+            </p>
+          <p>
+            <img
+              src="../img/ig.png"
+              style="max-width: 3%"
+              alt="Logo Instagram"
+            />casa-campo
+          </p><br><br>
+          <p>Copyright © 2023</p>
+        </div>
+        <div class="contact">
+          <h5>Contacto</h5>
+          <p>Av. Landajo 350 - Depto Cruz Alta</p>
+          <p>Provincia Tucumán</p>
+          <p>Tel.: 3814922047 - 3814138041</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
